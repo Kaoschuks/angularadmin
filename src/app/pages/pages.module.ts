@@ -3,9 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { PagesRoutingModule } from './pages-routing.module';
 import { ComponentsModule } from 'src/app/shared/components/components.module';
+import { PrelaunchComponent } from './prelaunch/prelaunch.component';
 
 @NgModule({
   declarations: [
+  
+    PrelaunchComponent
   ],
   imports: [
     CommonModule, ComponentsModule,
