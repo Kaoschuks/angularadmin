@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-prelaunch',
+  selector: 'prelaunch',
   templateUrl: './prelaunch.component.html',
   styleUrls: ['./prelaunch.component.scss']
 })
