@@ -7,8 +7,8 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { HeaderComponent } from './ui/header/header.component';
 import { FooterComponent } from './ui/footer/footer.component';
 import { LoadingComponent } from './ui/loading/loading.component';
-import { SidebarLayoutComponent } from './layouts/sidebar-layout/sidebar-layout.component';
 import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
+import { WebsiteLayoutComponent } from './layouts/website-layout/website-layout.component';
 
 import { ErrorComponent } from './ui/error/error.component';
 import { NoContentComponent } from './ui/no-content/no-content.component';
@@ -19,7 +19,7 @@ import { LaunchingComponent } from './form/launching/launching.component';
 
 export const component: Array<any> = [
 	HeaderComponent, FooterComponent,
-	SidebarLayoutComponent, AuthLayoutComponent,
+	WebsiteLayoutComponent, AuthLayoutComponent,
 	LoadingComponent,  NoContentComponent, ErrorComponent,
 	LaunchingComponent
 	
