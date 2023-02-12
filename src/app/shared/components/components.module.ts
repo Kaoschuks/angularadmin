@@ -13,12 +13,15 @@ import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component
 import { ErrorComponent } from './ui/error/error.component';
 import { NoContentComponent } from './ui/no-content/no-content.component';
 
+import { LaunchingComponent } from './form/launching/launching.component';
+
 
 
 export const component: Array<any> = [
 	HeaderComponent, FooterComponent,
 	SidebarLayoutComponent, AuthLayoutComponent,
 	LoadingComponent,  NoContentComponent, ErrorComponent,
+	LaunchingComponent
 	
 ]
 
