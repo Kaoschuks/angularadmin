@@ -2,11 +2,11 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'launching-form',
-  templateUrl: './launching.component.html',
-  styleUrls: ['./launching.component.scss']
+  selector: 'hero-section',
+  templateUrl: './hero-section.component.html',
+  styleUrls: ['./hero-section.component.scss']
 })
-export class LaunchingComponent {
+export class HeroSectionComponent {
 
   @Output() public formEvent = new EventEmitter<any>();
   launchForm: FormGroup;
@@ -17,8 +17,6 @@ export class LaunchingComponent {
 
   ngOnInit() {
     this.launchForm = this.formBuilder.group({
-          firstname: ['', [Validators.required]],
-          lastname: ['', [Validators.required]],
           email: ['', [Validators.required, Validators.email]]
     });
   }
@@ -27,8 +25,7 @@ export class LaunchingComponent {
   get f() { return this.launchForm.controls; }
 
   signupEmail() {
-    console.log(this.launchForm.value);
-      if(this.launchForm.invalid) { 
+      if(this.launchForm.invalid) {
         return;
       } else {
         this.formEvent.emit({form: this.launchForm.value});

@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { ServicesModule } from './shared/services/services.module';
 import { HomeComponent } from './pages/app-pages/home/home.component';
 import { HeaderOldComponent } from './components/ui/header-old/header-old.component';
+import { ComponentsModule } from './shared/components/components.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { HeaderOldComponent } from './components/ui/header-old/header-old.compon
   imports: [
     BrowserModule, BrowserAnimationsModule, CommonModule,
     FormsModule, ReactiveFormsModule, ServicesModule,
-    NgxSpinnerModule, AppRoutingModule,
+    NgxSpinnerModule, AppRoutingModule, ComponentsModule
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

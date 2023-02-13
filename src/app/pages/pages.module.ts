@@ -11,7 +11,8 @@ import { PrelaunchComponent } from './app-pages/prelaunch/prelaunch.component';
     PrelaunchComponent
   ],
   imports: [
-    CommonModule, ComponentsModule,
+    CommonModule, 
+    ComponentsModule,
     PagesRoutingModule
   ]
 })
