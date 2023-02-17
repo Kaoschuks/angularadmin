@@ -1,0 +1,91 @@
+.feature_area .cash-img {
+    position: relative;
+    display: inline-block;
+
+    .msg-1 {
+        position: absolute;
+        right: 25px;
+        bottom: 235px;
+        box-shadow: 0px 16.9638557434px 68.9156646729px 0px #3f5d6540;
+    }
+
+    .msg-2 {
+        position: absolute;
+        left: -16px;
+        bottom: 155px;
+        box-shadow: 0px 16.2357940674px 65.9579086304px 0px #3f5d6540;
+    }
+}
+
+.financial_needs {
+    .blog-widget {
+        .blog-img {
+            .img-content {
+                // position: relative;
+                // z-index: 1;
+        
+                .track-3 {
+                    position: absolute;
+                    right: 300px;
+                }
+            }
+        }
+    }
+    
+    .track-2{
+        // bottom: 40px;
+        left: -80px;
+    }
+    
+}
+
+
+.circle-bg {
+    position: relative;
+
+    // &:after { 
+    //     width: 300px;
+    //     height: 300px;
+    //     content: "";
+    //     z-index: -1;
+    //     border-radius: 50%;
+    //     position: absolute;
+    //     bottom: -90px;
+    //     right: -90px;
+    //     background: #bee0f5;
+    // }
+}
+
+.card-payment {
+    overflow: hidden;
+    border-bottom: 16px solid #9cd9fe;
+
+    .text-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .img-content {
+        position: relative;
+        z-index: 3;
+
+        .card-2 {
+            position: absolute;
+            top: 120px;
+            right: -118px;
+        }
+    }   
+}
+
+.footer_area {
+    background-color: #000;
+    position: relative;
+    padding: 60px 0px;
+    color: #fff;
+    // transform: translateY(-50%);
+
+    // .ctp-app-image{
+    //     text-align: end;
+    // }
+    
+}

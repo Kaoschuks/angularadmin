@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "./assets/theme/theme.scss";
+
+
 .text-default {
     color: #9cd9fe !important;
 }
@@ -7,6 +11,6 @@
     background-color: #9cd9fe !important;
 }
 
-.bg-light {
+.bg-lighter {
     background-color: #bee0f5 !important;
 }
