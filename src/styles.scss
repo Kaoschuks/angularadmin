@@ -2,6 +2,23 @@
 
 @import "./assets/theme/theme.scss";
 
+body {
+
+    &::-webkit-scrollbar {
+        display: block;
+        scrollbar-width: 5px;
+        background: none;
+        width: 7px;
+        border-radius: 10px;
+      }
+    
+      &::-webkit-scrollbar-thumb {
+          background:  #9cd9fe; 
+          border-radius: 10px;
+          cursor: pointer;
+    }    
+
+}
 
 .text-default {
     color: #9cd9fe !important;
