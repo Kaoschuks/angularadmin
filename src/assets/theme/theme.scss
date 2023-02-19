@@ -17,6 +17,39 @@
     }
 }
 
+.advantages {
+    .media {
+        border: 1px solid #B0BAF1;
+        margin-bottom: 34px;
+        padding: 30px 20px 16px 20px;
+        border-radius: 20px;
+
+        i {
+            margin-right: 18px;
+        }
+        .media-body {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+
+            
+    
+            h5 {
+                font-size: 22px;
+                color: #252525;
+                line-height: 26px;
+                margin-bottom: 19px;
+            }
+            p {
+                color: #808080;
+                line-height: 24px;
+                font-size: 14px;
+            }
+        }
+    }
+    
+}
+
 .financial_needs {
     .blog-widget {
         .blog-img {
@@ -30,7 +63,11 @@
                 }
             }
         }
+        &:hover{
+            background-color: #9cd9fe;
+        }
     }
+   
     
     .track-2{
         // bottom: 40px;

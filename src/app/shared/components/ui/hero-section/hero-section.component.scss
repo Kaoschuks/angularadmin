@@ -11,3 +11,10 @@ input[type="email"] {
         outline: 0 none !important;
     }
 }
+
+@media screen and (max-width: 400px) {
+
+    .img-header-container {
+        max-height: 30vh !important;
+    }
+}
