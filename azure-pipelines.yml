@@ -1,0 +1,28 @@
+# Node.js with Angular
+# Build a Node.js project that uses Angular.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '16.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install -g @angular/cli
+    npm install
+    ng build --aot
+  displayName: 'npm install and build'
+
+- script: |
+    firebase deploy --only=hosting:aidewebsite \
+    --token 1//03OH2vdwHmeW-CgYIARAAGAMSNwF-L9IrATCRasho2_y0n5_wWyDCzWUQwbdrFHOdSxZg-W1Jo9YEpiNdHtgIzqN7fIWSR3detbU 
+  displayName: 'Upload to firebase hosting'
+
