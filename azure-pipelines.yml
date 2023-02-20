@@ -16,7 +16,7 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm install -g @angular/cli
+    npm install -g @angular/cli firebase-tools
     npm install
     ng build --aot
   displayName: 'npm install and build'
