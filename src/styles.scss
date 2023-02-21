@@ -2,8 +2,11 @@
 
 @import "./assets/theme/theme.scss";
 
-body {
+* {
+    font-family: Moderat, Helvetica, Arial, sans-serif !important;
+}
 
+body {
     &::-webkit-scrollbar {
         display: block;
         scrollbar-width: 5px;
@@ -13,12 +16,83 @@ body {
       }
     
       &::-webkit-scrollbar-thumb {
-          background:  #9cd9fe; 
+          background:  var(--color-primary); 
           border-radius: 10px;
           cursor: pointer;
     }    
 
 }
+
+.top_header_ontainer {
+    background: var(--color-tertiary) !important;
+
+    .top_header span {
+        color: var(--color-white) !important;
+    }
+}
+
+.headerv {
+    background: var(--color-primary) !important;
+    color: var(--color-white) !important;
+
+    a.nav-link {
+        position: relative;
+      }
+      
+      a.nav-link::before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 4px;
+          border-radius: 4px;
+          background-color: var(--color-light) !important;
+          bottom: 0;
+          left: 0;
+          transform-origin: right;
+          transform: scaleX(0);
+          transition: transform .3s ease-in-out;
+        }
+      
+      a.nav-link:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+      }
+
+    input[type="email"] {
+        border-color: transparent !important;
+        background-color: var(--color-primary) !important;
+        color: var(--color-white) !important;
+        // border-bottom: 2px solid #000 !important;
+        border-radius: 0 !important;
+    
+        &:focus {
+            border-color: transparent !important;
+            background-color: var(--color-primary) !important;
+            // border-bottom: 2px solid #000!important;
+            box-shadow: none!important;
+            outline: 0 none !important;
+        }
+    }
+
+    input[type="email"]::-webkit-input-placeholder {
+        /* WebKit, Blink, Edge */
+        color: var(--color-white) !important;
+    }
+    input[type="email"]:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: var(--color-white) !important;
+    }
+    input[type="email"]::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: var(--color-white) !important;
+    }
+    input[type="email"]:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: var(--color-white) !important;
+    }
+}
+
+
 
 .text-default {
     color: #9cd9fe !important;
@@ -52,10 +126,10 @@ h5, h5 > a {
     margin-bottom: 30px;
     font-size: 2.5rem;
 }
-.title2 {
-    font-weight: 700;
-    font-size: 2.5rem;
-}
+// .title2 {
+//     // font-weight: 700;
+//     font-size: 2.5rem;
+// }
 .cmn-btn {
     padding: 10px 30px 15px;
     font-weight: 500;
@@ -102,7 +176,7 @@ h5, h5 > a {
 .financial-planning .plan-box ul li .check {
     min-width: 24px;
     min-height: 24px;
-    background: #055c2d;
+    background: #9cd9fe;
     border-radius: 50%;
     margin-right: 10px;
 }
@@ -144,3 +218,4 @@ img {
 .features-section .top-section .list {
     padding-left: 0rem !important;
 }
+
