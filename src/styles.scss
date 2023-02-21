@@ -2,9 +2,11 @@
 
 @import "./assets/theme/theme.scss";
 
-body {
---ion-font-family: Moderat, Helvetica, Arial, sans-serif !important;
+* {
+    font-family: Moderat, Helvetica, Arial, sans-serif !important;
+}
 
+body {
     &::-webkit-scrollbar {
         display: block;
         scrollbar-width: 5px;
@@ -14,12 +16,52 @@ body {
       }
     
       &::-webkit-scrollbar-thumb {
-          background:  #9cd9fe; 
+          background:  var(--color-primary); 
           border-radius: 10px;
           cursor: pointer;
     }    
 
 }
+
+.headerv {
+    background: var(--color-primary) !important;
+    color: var(--color-white) !important;
+
+    input[type="email"] {
+        border-color: transparent !important;
+        background-color: var(--color-primary) !important;
+        color: var(--color-white) !important;
+        // border-bottom: 2px solid #000 !important;
+        border-radius: 0 !important;
+    
+        &:focus {
+            border-color: transparent !important;
+            background-color: var(--color-primary) !important;
+            // border-bottom: 2px solid #000!important;
+            box-shadow: none!important;
+            outline: 0 none !important;
+        }
+    }
+
+    input[type="email"]::-webkit-input-placeholder {
+        /* WebKit, Blink, Edge */
+        color: var(--color-white) !important;
+    }
+    input[type="email"]:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: var(--color-white) !important;
+    }
+    input[type="email"]::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: var(--color-white) !important;
+    }
+    input[type="email"]:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: var(--color-white) !important;
+    }
+}
+
+
 
 .text-default {
     color: #9cd9fe !important;
@@ -146,143 +188,3 @@ img {
     padding-left: 0rem !important;
 }
 
-/* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-    .w-sm-100 {
-        width: 100% !important;
-    }
-
-    .w-sm-75 {
-        width: 75% !important;
-    }
-
-    .w-sm-50 {
-        width: 50% !important;
-    }
-
-    .w-sm-25 {
-        width: 25% !important;
-    }
-
-    .h-sm-100 {
-        height: 100% !important;
-    }
-
-    .h-sm-75 {
-        height: 75% !important;
-    }
-
-    .h-sm-50 {
-        height: 50% !important;
-    }
-
-    .h-sm-25 {
-        height: 25% !important;
-    }
-}
-
-
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
-    .w-md-100 {
-        width: 100% !important;
-    }
-
-    .w-md-75 {
-        width: 75% !important;
-    }
-
-    .w-md-50 {
-        width: 50% !important;
-    }
-
-    .w-md-25 {
-        width: 25% !important;
-    }
-
-    .h-md-100 {
-        height: 100% !important;
-    }
-
-    .h-md-75 {
-        height: 75% !important;
-    }
-
-    .h-md-50 {
-        height: 50% !important;
-    }
-
-    .h-md-25 {
-        height: 25% !important;
-    }
-}
-
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
-    .w-lg-100 {
-        width: 100% !important;
-    }
-
-    .w-lg-75 {
-        width: 75% !important;
-    }
-
-    .w-lg-50 {
-        width: 50% !important;
-    }
-
-    .w-lg-25 {
-        width: 25% !important;
-    }
-
-    .h-lg-100 {
-        height: 100% !important;
-    }
-
-    .h-lg-75 {
-        height: 75% !important;
-    }
-
-    .h-lg-50 {
-        height: 50% !important;
-    }
-
-    .h-lg-25 {
-        height: 25% !important;
-    }
-}
-
-/* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-    .w-xl-100 {
-        width: 100% !important;
-    }
-
-    .w-xl-75 {
-        width: 75% !important;
-    }
-
-    .w-xl-50 {
-        width: 50% !important;
-    }
-
-    .w-xl-25 {
-        width: 25% !important;
-    }
-
-    .h-xl-100 {
-        height: 100% !important;
-    }
-
-    .h-xl-75 {
-        height: 75% !important;
-    }
-
-    .h-xl-50 {
-        height: 50% !important;
-    }
-
-    .h-xl-25 {
-        height: 25% !important;
-    }
-}

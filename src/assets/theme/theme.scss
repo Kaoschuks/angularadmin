@@ -1,3 +1,10 @@
+:root{
+    --color-primary: #1D70A2;
+    --color-secondary: #3dc2ff;
+    --color-white: #ffffff;
+    --color-medium: #92949c;
+    --color-light: #f4f5f8;
+}
 .feature_area .cash-img {
     position: relative;
     display: inline-block;
@@ -19,7 +26,7 @@
 
 .advantages {
     .media {
-        border: 1px solid #B0BAF1;
+        border: 1px solid var(--color-secondary);
         margin-bottom: 34px;
         padding: 30px 20px 16px 20px;
         border-radius: 8px;
