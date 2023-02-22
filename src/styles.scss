@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "./assets/theme/theme.scss";
-// @import "./assets/theme/breakpoints.scss";
 
 * {
     font-family: Moderat, Helvetica, Arial, sans-serif !important;
@@ -93,6 +92,25 @@ body {
     }
 }
 
+.feature_area .cash-img {
+    position: relative;
+    display: inline-block;
+
+    .msg-1 {
+        position: absolute;
+        right: 25px;
+        bottom: 235px;
+        box-shadow: 0px 16.9638557434px 68.9156646729px 0px #3f5d6540;
+    }
+
+    .msg-2 {
+        position: absolute;
+        left: -16px;
+        bottom: 155px;
+        box-shadow: 0px 16.2357940674px 65.9579086304px 0px #3f5d6540;
+    }
+}
+
 .financial_needs {
     .blog-widget {
         border: 1px solid #B0BAF1;
@@ -122,130 +140,136 @@ body {
     
 }
 
-
-
-.text-default {
-    color: #9cd9fe !important;
+.features-section h5 {
+    margin: 18px 0px 5px;
 }
 
-.bg-default {
-    background-color: #9cd9fe !important;
+
+.advantages {
+    .media {
+        border: 1px solid var(--color-secondary);
+        margin-bottom: 34px;
+        padding: 30px 20px 16px 20px;
+        border-radius: 8px;
+
+        i {
+            margin-right: 18px;
+        }
+        .media-body {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+
+            
+    
+            h5 {
+                font-size: 22px;
+                color: #252525;
+                line-height: 26px;
+                margin-bottom: 19px;
+            }
+            p {
+                color: #808080;
+                line-height: 24px;
+                font-size: 14px;
+            }
+        }
+    }
+    
 }
 
-.bg-lighter {
-    background-color: #bee0f5 !important;
+.financial-planning {
+    .cus-mar {
+        margin-bottom: -30px;
+    }
+    .plan-box {
+        padding: 30px 20px;
+        // background: var(--color-primary);
+        box-shadow: 0px 12px 24px rgb(47 65 129 / 10%);
+        border-radius: 20px;
+        margin-bottom: 30px;
+        border: 1px solid transparent;
+        transition: 0.3s;
+
+        .thumb {
+            width: 80px;
+            height: 80px;
+            background: #F5FAFF;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        a {
+            margin: 36px 0 4px;
+        }
+
+        ul {
+            padding-left: 0rem !important;
+
+            li {
+                margin-top: 15px; 
+
+                .check  {
+                    min-width: 24px;
+                    min-height: 24px;
+                    background: #9cd9fe;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+            }
+        }
+        
+    }
 }
 
-.pb-120 {
-    padding-bottom: 120px;
+.card-payment {
+    overflow: hidden;
+    border-bottom: 16px solid #9cd9fe;
+
+    .text-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .img-content {
+        position: relative;
+        z-index: 3;
+
+        .card-2 {
+            position: absolute;
+            top: 120px;
+            right: -118px;
+        }
+    }   
 }
-.section-text {
-    margin-bottom: 34px;
-}
-.sub-title {
-    color: #055c2d;
-    margin-bottom: 16px;
-}
-h5, h5 > a {
-    font-size: 24px;
-    line-height: 31.2px;
-    margin-top: -5px;
-}
-.title {
-    font-weight: 700;
-    margin-bottom: 30px;
-    font-size: 2.5rem;
-}
-// .title2 {
-//     // font-weight: 700;
-//     font-size: 2.5rem;
+
+
+
+// .cmn-btn {
+//     padding: 10px 30px 15px;
+//     font-weight: 500;
+//     text-align: center;
+//     background: #1a4dbe;
+//     color: #ffffff;
+//     border: 1px solid #1a4dbe;
+//     transition: 0.3s;
+//     border-radius: 50px;
 // }
-.cmn-btn {
-    padding: 10px 30px 15px;
-    font-weight: 500;
-    text-align: center;
-    background: #1a4dbe;
-    color: #ffffff;
-    border: 1px solid #1a4dbe;
-    transition: 0.3s;
-    border-radius: 50px;
-}
-.financial-planning .cus-mar {
-    margin-bottom: -30px;
-}
-.financial-planning .plan-box {
-    padding: 30px 20px;
-    background: var(--body-color);
-    box-shadow: 0px 12px 24px rgb(47 65 129 / 10%);
-    border-radius: 20px;
-    margin-bottom: 30px;
-    border: 1px solid transparent;
-    transition: 0.3s;
-}
-.financial-planning .plan-box .thumb {
-    width: 80px;
-    height: 80px;
-    background: #F5FAFF;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+
+.footer_area {
+    background-color: #000;
     position: relative;
-    transition: 0.3s;
-}
-.financial-planning .plan-box a {
-    margin: 36px 0 4px;
-}
-.financial-planning .plan-box ul li {
-    margin-top: 15px;
-}
-.financial-planning .plan-box ul {
-    padding-left: 0rem !important;
-}
+    padding: 60px 0px;
+    color: #fff;
+    // transform: translateY(-50%);
 
-.financial-planning .plan-box ul li .check {
-    min-width: 24px;
-    min-height: 24px;
-    background: #9cd9fe;
-    border-radius: 50%;
-    margin-right: 10px;
+    // .ctp-app-image{
+    //     text-align: end;
+    // }
+    
 }
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-.head-icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    // background: #1A4DBE;
-    margin-bottom: 30px;
-}
-// .sub-title {
-//     color: #055c2d;
-//     margin-bottom: 30px;
-// }
-
-.features-section .top-section .list {
-    margin-top: 20px;
-}
-
-.features-section .top-section .list .list-item {
-    margin-top: 16px;
-}
-.features-section .top-section .list .list-item span {
-    font-weight: 500;
-}
-.features-section .top-section .list .check {
-    min-width: 24px;
-    min-height: 24px;
-    background: #055c2d;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-.features-section .top-section .list {
-    padding-left: 0rem !important;
-}
-
