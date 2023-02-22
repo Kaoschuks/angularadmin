@@ -5,6 +5,52 @@
     --color-white: #ffffff;
     --color-medium: #92949c;
     --color-light: #f4f5f8;
+
+    --big-title-text: 2.5rem;
+
+    --font-weight: 600;
+}
+
+//Fonts Sizes----------------------------------------------------------------
+.fs-11 {
+    font-size: 0.75rem !important;
+}
+.fs-12{
+    font-size: 0.8rem !important;
+}
+.fs-13 {
+    font-size: 0.82rem !important;
+}
+.fs-16 {
+    font-size: 1.5rem !important;
+}
+.fs-40 {
+    font-size: var(--big-title-text) !important;
+}
+
+//Font Weight----------------------------------------------------------------
+.fw-600 {
+    font-weight: var(--font-weight) !important;
+}
+
+//Margins----------------------------------------------------------------
+.-mb-8 {
+    margin-bottom: -8px !important;
+}
+
+//Borders----------------------------------------------------------------
+.border-b-black {
+    border-bottom: 2px solid #000 !important;
+}
+
+//Aligns----------------------------------------------------------------
+.vertical-align-middle {
+    vertical-align: middle !important;
+}
+
+//Backgrounds----------------------------------------------------------------
+.bg-primary-light {
+    background-color: #9cd9fe !important;
 }
 .feature_area .cash-img {
     position: relative;
@@ -58,31 +104,6 @@
     
 }
 
-.financial_needs {
-    .blog-widget {
-        .blog-img {
-            .img-content {
-                // position: relative;
-                // z-index: 1;
-        
-                .track-3 {
-                    position: absolute;
-                    right: 300px;
-                }
-            }
-        }
-        &:hover{
-            // background-color: #9cd9fe;
-        }
-    }
-   
-    
-    .track-2{
-        // bottom: 40px;
-        left: -80px;
-    }
-    
-}
 
 
 .circle-bg {

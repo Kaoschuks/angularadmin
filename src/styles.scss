@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "./assets/theme/theme.scss";
+// @import "./assets/theme/breakpoints.scss";
 
 * {
     font-family: Moderat, Helvetica, Arial, sans-serif !important;
@@ -90,6 +91,35 @@ body {
         /* Internet Explorer 10-11 */
         color: var(--color-white) !important;
     }
+}
+
+.financial_needs {
+    .blog-widget {
+        border: 1px solid #B0BAF1;
+        padding: 20px 8px 16px 15px;
+        border-radius: 12px;
+        .blog-img {
+            .img-content {
+                // position: relative;
+                // z-index: 1;
+        
+                .track-3 {
+                    position: absolute;
+                    right: 300px;
+                }
+            }
+        }
+        &:hover{
+            // background-color: #9cd9fe;
+        }
+    }
+   
+    
+    .track-2{
+        // bottom: 40px;
+        left: -80px;
+    }
+    
 }
 
 
