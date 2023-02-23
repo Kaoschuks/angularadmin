@@ -5,133 +5,79 @@
     --color-white: #ffffff;
     --color-medium: #92949c;
     --color-light: #f4f5f8;
-}
-.feature_area .cash-img {
-    position: relative;
-    display: inline-block;
 
-    .msg-1 {
-        position: absolute;
-        right: 25px;
-        bottom: 235px;
-        box-shadow: 0px 16.9638557434px 68.9156646729px 0px #3f5d6540;
-    }
+    --big-title-text: 2.5rem;
 
-    .msg-2 {
-        position: absolute;
-        left: -16px;
-        bottom: 155px;
-        box-shadow: 0px 16.2357940674px 65.9579086304px 0px #3f5d6540;
-    }
+    --font-weight: 600;
 }
 
-.advantages {
-    .media {
-        border: 1px solid var(--color-secondary);
-        margin-bottom: 34px;
-        padding: 30px 20px 16px 20px;
-        border-radius: 8px;
-
-        i {
-            margin-right: 18px;
-        }
-        .media-body {
-            -webkit-box-flex: 1;
-            -ms-flex: 1;
-            flex: 1;
-
-            
-    
-            h5 {
-                font-size: 22px;
-                color: #252525;
-                line-height: 26px;
-                margin-bottom: 19px;
-            }
-            p {
-                color: #808080;
-                line-height: 24px;
-                font-size: 14px;
-            }
-        }
-    }
-    
+//Fonts Sizes----------------------------------------------------------------
+.fs-11 {
+    font-size: 0.75rem !important;
+}
+.fs-12{
+    font-size: 0.8rem !important;
+}
+.fs-13 {
+    font-size: 0.82rem !important;
+}
+.fs-16 {
+    font-size: 1.5rem !important;
+}
+.fs-40 {
+    font-size: var(--big-title-text) !important;
 }
 
-.financial_needs {
-    .blog-widget {
-        .blog-img {
-            .img-content {
-                // position: relative;
-                // z-index: 1;
-        
-                .track-3 {
-                    position: absolute;
-                    right: 300px;
-                }
-            }
-        }
-        &:hover{
-            // background-color: #9cd9fe;
-        }
-    }
-   
-    
-    .track-2{
-        // bottom: 40px;
-        left: -80px;
-    }
-    
+//Font Weight----------------------------------------------------------------
+.fw-600 {
+    font-weight: var(--font-weight) !important;
 }
 
-
-.circle-bg {
-    position: relative;
-
-    // &:after { 
-    //     width: 300px;
-    //     height: 300px;
-    //     content: "";
-    //     z-index: -1;
-    //     border-radius: 50%;
-    //     position: absolute;
-    //     bottom: -90px;
-    //     right: -90px;
-    //     background: #bee0f5;
-    // }
+//Margins----------------------------------------------------------------
+.-mb-8 {
+    margin-bottom: -8px !important;
+}
+.mb-34 {
+    margin-bottom: 34px !important;
 }
 
-.card-payment {
-    overflow: hidden;
-    border-bottom: 16px solid #9cd9fe;
-
-    .text-content {
-        position: relative;
-        z-index: 1;
-    }
-
-    .img-content {
-        position: relative;
-        z-index: 3;
-
-        .card-2 {
-            position: absolute;
-            top: 120px;
-            right: -118px;
-        }
-    }   
+//Padding----------------------------------------------------------------
+.pb-120 {
+    padding-bottom: 120px;
 }
 
-.footer_area {
-    background-color: #000;
-    position: relative;
-    padding: 60px 0px;
-    color: #fff;
-    // transform: translateY(-50%);
-
-    // .ctp-app-image{
-    //     text-align: end;
-    // }
-    
+//Borders----------------------------------------------------------------
+.border-b-black {
+    border-bottom: 2px solid #000 !important;
 }
 
+//Aligns----------------------------------------------------------------
+.vertical-align-middle {
+    vertical-align: middle !important;
+}
+
+//Colors----------------------------------------------------------------
+.text-default {
+    color: #9cd9fe !important;
+}
+
+//Backgrounds----------------------------------------------------------------
+.bg-primary-light {
+    background-color: #9cd9fe !important;
+}
+.bg-default {
+    background-color: #9cd9fe !important;
+}
+.bg-lighter {
+    background-color: #bee0f5 !important;
+}
+
+//Heights----------------------------------------------------------------
+.h-200 {
+    height: 200px !important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

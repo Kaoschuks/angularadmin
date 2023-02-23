@@ -23,7 +23,7 @@ export const component: Array<any> = [
 	HeaderComponent, FooterComponent,
 	WebsiteLayoutComponent, AuthLayoutComponent,
 	LoadingComponent,  NoContentComponent, ErrorComponent,
-	LaunchingComponent, HeroSectionComponent, TopHeaderComponent
+	LaunchingComponent, TopHeaderComponent, HeroSectionComponent
 	
 ]
 

@@ -9,14 +9,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServicesModule } from './shared/services/services.module';
 import { HomeComponent } from './pages/app-pages/home/home.component';
-import { HeaderOldComponent } from './components/ui/header-old/header-old.component';
 import { ComponentsModule } from './shared/components/components.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    HeaderOldComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule, BrowserAnimationsModule, CommonModule,
