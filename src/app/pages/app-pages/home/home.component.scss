@@ -1,15 +1,20 @@
 @media screen and (max-width: 400px) {
     .headerv {
-        margin-bottom: -50px !important;
+        // margin-bottom: -50px !important;
+    }
+    .feature_area {
+        //margin-top: 80px !important;
+        padding-top: -50px !important;
     }
 }
 
 @media screen and (min-width: 500px) {
     .headerv {
-        margin-bottom: 300px !important;
+        // margin-bottom: 300px !important;
     }
-    .feature_area_content {
+    .feature_area {
         //margin-top: 80px !important;
+        padding-top: 300px !important;
     }
   }
 
