@@ -23,6 +23,7 @@
     "ngx-spinner": "^15.0.1",
     "ngx-typed-js": "^2.1.1",
     "ngx-webstorage-service": "^5.0.0",
+    "swiper": "^8.4.7",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"

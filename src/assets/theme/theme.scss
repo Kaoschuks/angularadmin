@@ -10,7 +10,7 @@
     --color-magnolia: #f8f5fd;
     --color-lavender: #f0edff;
 
-    --big-title-text: 2.5rem;
+    --big-title-text: 2.2rem;
 
     --font-weight: 600;
 }
@@ -64,6 +64,15 @@
 //Colors----------------------------------------------------------------
 .text-primary {
     color: var(--color-primary) !important;
+}
+.text-lavender {
+    color: var(--color-lavender) !important;
+}
+.text-lotion {
+    color: var(--color-lotion) !important;
+}
+.text-magnolia {
+    color: var(--color-magnolia) !important;
 }
 
 //Backgrounds----------------------------------------------------------------
