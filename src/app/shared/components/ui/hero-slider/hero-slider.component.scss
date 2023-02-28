@@ -1,0 +1,82 @@
+.swiper-wrapper {
+    margin-top: 70px;
+    
+}
+// .swiper-button-prev {
+//     color: red;
+//     margin-left: -15px;
+
+//     &::after {
+//         font-size: 32px;
+//     }
+// }
+// .swiper-button-next {
+//     color: green;
+//     margin-right: -15px;
+
+//     &::after {
+//         font-size: 32px;
+//     }
+// }
+
+@media screen and (max-width: 576px) {
+    .swiper-prev-button {
+        top: 50%; 
+        // margin-left: 120px; 
+        padding-left: 0.7rem; 
+        padding-right: 0.7rem;
+        font-size: 0.8rem;
+    }
+    .swiper-next-button {
+        top: 50%; 
+        // margin-right: 100px; 
+        padding-left: 0.7rem; 
+        padding-right: 0.7rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px){
+    .swiper-prev-button {
+        top: 50%; 
+        margin-left: 35px; 
+        padding-left: 0.8rem; 
+        padding-right: 0.8rem;
+    }
+    .swiper-next-button {
+        top: 50%; 
+        margin-right: 30px; 
+        padding-left: 0.8rem; 
+        padding-right: 0.8rem;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 979px) {
+    .swiper-prev-button {
+        top: 50%; 
+        // margin-left: 120px; 
+        padding-left: 0.8rem; 
+        padding-right: 0.8rem;
+    }
+    .swiper-next-button {
+        top: 50%; 
+        // margin-right: 100px; 
+        padding-left: 0.8rem; 
+        padding-right: 0.8rem;
+    }
+  }
+
+  @media screen and (min-width: 979px) {
+    .swiper-prev-button {
+        top: 75%; 
+        margin-left: 120px; 
+        padding-left: 0.8rem; 
+        padding-right: 0.8rem;
+    }
+    .swiper-next-button {
+        top: 75%; 
+        margin-right: 120px; 
+        padding-left: 0.8rem; 
+        padding-right: 0.8rem;
+    }
+  }

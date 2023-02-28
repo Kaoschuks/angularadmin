@@ -1,0 +1,18 @@
+<swiper #swiper [keyboard]="true" [loop]="true" [slidesPerView]="3" [spaceBetween]="5" class="myIntroSwiper"  (slideChange)="onSlideChange($event)">
+    <ng-template swiperSlide *ngFor="let image of slideImages">
+        <div>
+            <img #bgImg [src]="image" />
+        </div>
+    </ng-template>
+  </swiper>
+    <div class="swiper-prev-button position-absolute start-0 rounded-circle pt-2 pb-2" (click)="slidePrev()" style="cursor: pointer; background: rgba(240, 240, 240, 0.1);"><i class="bi bi-arrow-left"></i></div>
+    <div class="swiper-next-button position-absolute end-0 rounded-circle pt-2 pb-2" (click)="slideNext()" style="cursor: pointer; background: rgba(240, 240, 240, 0.1);"><i class="bi bi-arrow-right"></i></div>  
+
+<!-- <div class="navigation-btn position-relative">
+    <div class="position-absolute inset-x-0 top-50 left-0 rounded-circle bg-primary mb-4 flex list-none justify-center">
+        <button class="swiper-button-next" (click)="slideNext()"><i class="bi bi-arrow-right"></i></button>
+    </div>
+    <div class="position-absolute inset-x-0 top-50 right-0 rounded-circle bg-primary mb-4 flex list-none justify-center">
+        <button class="swiper-button-prev" (click)="slidePrev()"><i class="bi bi-arrow-left"></i></button> 
+    </div>
+  </div> -->

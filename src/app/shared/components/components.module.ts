@@ -3,6 +3,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { SwiperModule } from "swiper/angular";
 
 import { HeaderComponent } from './ui/header/header.component';
 import { FooterComponent } from './ui/footer/footer.component';
@@ -16,6 +17,7 @@ import { NoContentComponent } from './ui/no-content/no-content.component';
 import { LaunchingComponent } from './form/launching/launching.component';
 import { HeroSectionComponent } from './ui/hero-section/hero-section.component';
 import { TopHeaderComponent } from './ui/top-header/top-header.component';
+import { HeroSliderComponent } from './ui/hero-slider/hero-slider.component';
 
 
 
@@ -23,7 +25,7 @@ export const component: Array<any> = [
 	HeaderComponent, FooterComponent,
 	WebsiteLayoutComponent, AuthLayoutComponent,
 	LoadingComponent,  NoContentComponent, ErrorComponent,
-	LaunchingComponent, TopHeaderComponent, HeroSectionComponent
+	LaunchingComponent, TopHeaderComponent, HeroSectionComponent, HeroSliderComponent
 	
 ]
 
@@ -35,6 +37,7 @@ export const component: Array<any> = [
 		RouterModule,
 		NgxSpinnerModule,
 		ReactiveFormsModule,
+		SwiperModule,
 	],
 	schemas: [CUSTOM_ELEMENTS_SCHEMA],
 	exports: component
