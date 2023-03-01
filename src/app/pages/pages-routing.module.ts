@@ -4,12 +4,12 @@ import { HomeComponent } from './app-pages/home/home.component';
 import { PrelaunchComponent } from './app-pages/prelaunch/prelaunch.component';
 
 const routes: Routes = [
-  // { path: '', component: HomeComponent },
-  {
-    path: '',
-    redirectTo: 'prelaunch',
-    pathMatch: 'full'
-  },
+  { path: '', component: HomeComponent },
+  // {
+  //   path: '',
+  //   redirectTo: 'prelaunch',
+  //   pathMatch: 'full'
+  // },
   { path: 'prelaunch', component: PrelaunchComponent}
 ];
 
