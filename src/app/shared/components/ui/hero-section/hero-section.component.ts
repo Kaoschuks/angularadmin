@@ -8,7 +8,6 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   encapsulation: ViewEncapsulation.None,
 })
 export class HeroSectionComponent {
-
   @Output() public formEvent = new EventEmitter<any>();
   
   launchForm = new FormGroup(
@@ -19,7 +18,7 @@ export class HeroSectionComponent {
 
   constructor() { }
 
-  ngOnInit() { }
+  ngOnInit() {}
 
   // form field getter
   get f() { return this.launchForm.controls; }

@@ -11,12 +11,12 @@
                 <span class="invalid-feedback">Please enter your email address</span>
                 </div>
                 <div class="col-md-auto -mb-8">
-                <button type="button" class="btn btn-dark mb-3" (click)="signupEmail()">Get started  <i class="bi bi-arrow-right"></i></button>
+                <button type="button" class="btn btn-dark mb-3" (click)="signupEmail()" [disabled]="launchForm.invalid">Get started  <i class="bi bi-arrow-right"></i></button>
                 </div>
                 
             </form>
         </div>
-        <div *ngIf="f.email?.invalid && (f.email?.dirty || f.email?.touched)" style="margin-top: -50px; margin-bottom: 30px;">
+        <div *ngIf="f.email?.invalid && (f.email?.dirty || f.email?.touched)" class="justify-content-sm-start justify-content-start" style="margin-top: -50px; margin-bottom: 30px;">
             <span *ngIf="f.email?.errors?.['required']" class="text-danger fs-12" >Email address is required</span>
             <span *ngIf="f.email?.errors?.['email']" class="text-danger fs-12" >Email address is not valid</span>
         </div>
