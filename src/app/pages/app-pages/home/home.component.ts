@@ -8,4 +8,14 @@ import { Component } from '@angular/core';
 
 export class HomeComponent {
   public year: any = new Date().getFullYear()
+
+  ngOnInit() {
+
+  }
+
+  getStarted(event: any) {
+    console.log(event.email)
+    console.log(event)
+  }
+
  }

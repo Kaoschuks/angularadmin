@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class PrelaunchComponent {
 
+  ngOnInit() {
+
+  }
+
+  getStarted(event: any) {
+    console.log(event.email)
+    console.log(event)
+  }
+
 }

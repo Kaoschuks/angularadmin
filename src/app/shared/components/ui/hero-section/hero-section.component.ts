@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output, ViewChild, ViewEncapsulation } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'hero-section',
@@ -10,17 +10,16 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 export class HeroSectionComponent {
 
   @Output() public formEvent = new EventEmitter<any>();
-  launchForm: FormGroup;
+  
+  launchForm = new FormGroup(
+    {
+      email: new FormControl(null, [Validators.email, Validators.required])
+    }
+  );
 
-  constructor(
-    private formBuilder: FormBuilder
-    ) { }
+  constructor() { }
 
-  ngOnInit() {
-    this.launchForm = this.formBuilder.group({
-          email: ['', [Validators.required, Validators.email]]
-    });
-  }
+  ngOnInit() { }
 
   // form field getter
   get f() { return this.launchForm.controls; }
@@ -29,7 +28,7 @@ export class HeroSectionComponent {
       if(this.launchForm.invalid) {
         return;
       } else {
-        this.formEvent.emit({form: this.launchForm.value});
+        this.formEvent.emit({email: this.launchForm.value.email});
       }
   }
 
