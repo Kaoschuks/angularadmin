@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "./assets/theme/theme.scss";
+@import "./assets/theme/font.scss";
 
 
 /* Angular Swiper Style */
@@ -41,11 +42,11 @@ body {
     background: var(--color-primary) !important;
     color: var(--color-white) !important;
 
-    a.nav-link {
+    span.nav-link {
         position: relative;
       }
       
-      a.nav-link::before {
+      span.nav-link::before {
           content: '';
           position: absolute;
           width: 100%;
@@ -59,7 +60,7 @@ body {
           transition: transform .3s ease-in-out;
         }
       
-      a.nav-link:hover::before {
+      span.nav-link:hover::before {
         transform-origin: left;
         transform: scaleX(1);
       }
@@ -99,7 +100,7 @@ body {
 }
 
 .feature_area {
-    background: var(--color-lotion) !important;
+    background: var(--color-secondary) !important;
     .cash-img {
         position: relative;
         display: inline-block;
@@ -121,7 +122,7 @@ body {
 }
 
 .financial_needs {
-    background: var(--color-lotion) !important;
+    background: var(--color-secondary) !important;
     .blog-widget {
         // border: 1px solid #B0BAF1;
         padding: 20px 0px 16px 15px;
@@ -151,7 +152,7 @@ body {
 }
 
 .features-section {
-    background: var(--color-magnolia) !important;
+    background: var(--color-medium-50) !important;
     h5 {
         margin: 18px 0px 5px;
     }

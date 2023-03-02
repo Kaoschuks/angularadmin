@@ -1,14 +1,17 @@
 :root{
     --color-primary: #5e51ea;
-    --color-secondary: #3dc2ff;
+    --color-secondary: #fcf9fc;
     --color-tertiary: #4439d5;
     --color-white: #ffffff;
     --color-medium: #6c757d;
     --color-light: #fffeff;
 
-    --color-lotion: #fcf9fc;
-    --color-magnolia: #f8f5fd;
-    --color-lavender: #f0edff;
+    --color-medium-50: #f8f5fd;
+    --color-light-50: #f0edff;
+    
+    // --color-lotion: #fcf9fc;
+    // --color-magnolia: #f8f5fd;
+    // --color-lavender: #f0edff;
 
     --big-title-text: 2.2rem;
 
@@ -65,25 +68,25 @@
 .text-primary {
     color: var(--color-primary) !important;
 }
-.text-lavender {
-    color: var(--color-lavender) !important;
+.text-light-50 {
+    color: var(--color-light-50) !important;
 }
-.text-lotion {
-    color: var(--color-lotion) !important;
+.text-secondary {
+    color: var(--color-secondary) !important;
 }
-.text-magnolia {
-    color: var(--color-magnolia) !important;
+.text-medium-50 {
+    color: var(--color-medium-50) !important;
 }
 
 //Backgrounds----------------------------------------------------------------
 .bg-primary {
     background: var(--color-primary) !important;
 }
-.bg-lavender {
-    background: var(--color-lavender) !important;
+.background-light-50 {
+    background: var(--color-light-50) !important;
 }
-.bg-lotion {
-    background: var(--color-lotion) !important;
+.background-secondary {
+    background: var(--color-secondary) !important;
 }
 
 //Heights----------------------------------------------------------------
@@ -94,4 +97,8 @@
 img {
     max-width: 100%;
     height: auto;
+}
+
+.cursor-pointer {
+    cursor: pointer;
 }

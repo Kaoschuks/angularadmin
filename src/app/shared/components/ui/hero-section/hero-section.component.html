@@ -16,12 +16,12 @@
                 
             </form>
         </div>
-        <div *ngIf="f.email?.invalid && (f.email?.dirty || f.email?.touched)" class="justify-content-sm-start justify-content-start" style="margin-top: -50px; margin-bottom: 30px;">
+        <!-- <div *ngIf="f.email?.invalid && (f.email?.dirty || f.email?.touched)" class="justify-content-sm-start justify-content-start" style="margin-top: -50px; margin-bottom: 30px;">
             <span *ngIf="f.email?.errors?.['required']" class="text-danger fs-12" >Email address is required</span>
             <span *ngIf="f.email?.errors?.['email']" class="text-danger fs-12" >Email address is not valid</span>
+        </div> -->
         </div>
-        </div>
-        <div class="overflow-none img-header-container position-relative" style="max-height: 52vh; top: -60px;">
+        <div class="overflow-none img-header-container position-relative" style="top: -60px;">
             <div class="container" style="width: 70%;">
                 <hero-slider></hero-slider>
                 <!-- <img src="assets/images/card-1.png" class="img-fluid rounded-3 mb-4" alt="Example image"  loading="lazy"> -->

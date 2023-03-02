@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, ElementRef, Renderer2, ViewChild, ViewEncapsulation } from '@angular/core';
 import { SwiperComponent } from 'swiper/angular';
 // import Swiper core and required modules
 import SwiperCore, { Keyboard, Pagination, Navigation, Autoplay } from 'swiper';
@@ -16,13 +16,9 @@ export class HeroSliderComponent {
   @ViewChild('swiper', {static: false}) swiper: SwiperComponent;
   @ViewChild('bgImg') bgImg: ElementRef;
 
-  // sliderConfig: SwiperOptions = {
-  //   slidesPerView: 1,
-  //   spaceBetween: 0,
-  //   navigation: {
-  //     enabled: true,
-  //   }
-  // }
+  constructor(
+    private renderer: Renderer2
+  ) {}
 
   slideImages: any = [
     'assets/images/hero-1.png',
@@ -31,16 +27,12 @@ export class HeroSliderComponent {
   ];
 
   onSlideChange(swiper: any) {
-    // this.bgImg.nativeElement.src = this.slideImages[this.swiper.swiperRef.activeIndex];
-    // if (swiper[0].isBeginning) {
-    //   this.swiper.swiperRef.allowSlidePrev = false;
-    //   this.swiper.swiperRef.allowSlideNext = true;
-    // } else if (swiper[0].isEnd) {
-    //   this.swiper.swiperRef.allowSlidePrev = true;
-    // } else {
-    //   this.swiper.swiperRef.allowSlideNext = true;
-    //   this.swiper.swiperRef.allowSlidePrev = true;
-    // }
+    let activeIndex = this.swiper.swiperRef.realIndex;
+    let currentSlide = this.swiper.swiperRef.slides[activeIndex]
+    console.log(currentSlide)
+    // this.renderer.setStyle(this.bgImg.nativeElement, 'display', 'none');
+    // this.bgImg.nativeElement.style.background = 'red';
+   
   }
 
   ngAfterContentChecked() {
@@ -49,14 +41,6 @@ export class HeroSliderComponent {
       this.swiper.swiperRef.autoplay.start();
     }
   }
-
-  // nextSlide() {
-  //   this.swiper.swiperRef.slideNext();
-  // }
-
-  // prevSlide() {
-  //   this.swiper.swiperRef.slidePrev();
-  // }
 
   slideNext(){
     this.swiper.swiperRef.slideNext(100);
