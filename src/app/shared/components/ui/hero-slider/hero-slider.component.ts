@@ -28,10 +28,10 @@ export class HeroSliderComponent {
 
   onSlideChange(swiper: any) {
     let activeIndex = this.swiper.swiperRef.realIndex;
-    let currentSlide = this.swiper.swiperRef.slides[activeIndex]
-    console.log(currentSlide)
-    // this.renderer.setStyle(this.bgImg.nativeElement, 'display', 'none');
-    // this.bgImg.nativeElement.style.background = 'red';
+    let currentSlide = this.swiper.swiperRef.slides[activeIndex];
+
+    let res = <HTMLElement>currentSlide;
+    res.style.overflow = 'hidden';
    
   }
 
