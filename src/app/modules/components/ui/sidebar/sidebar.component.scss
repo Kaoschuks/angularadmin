@@ -1,0 +1,47 @@
+
+.list-group-item {
+    span {
+        font-size: 15px !important;
+        margin-left: 15px !important;
+    }
+    i {
+        font-size: 20px !important;
+        top: 2px !important;
+        position: relative;
+        // margin-left: 10px !important;
+    }
+}
+
+.accordion-body {
+    padding-left: 10px !important;
+    margin-top: -10px !important;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0;
+    width: 260px;
+    z-index: 600;
+    padding-left: 10px !important;
+    // border-right: 1px solid #eee !important;
+    .active {
+        border-radius: 5px;
+    }
+    p {
+        margin-left: 10px;
+    }
+}
+
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Scrollable contents if viewport is shorter than content. */
+}

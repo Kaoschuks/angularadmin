@@ -1,0 +1,11 @@
+.no-content {
+    margin: 9vh auto !important;
+}
+.no-content img {
+    filter: grayscale(100%) !important;
+    opacity: 50% !important;
+}
+.no-content p {
+    margin-top: 0px !important; 
+    z-index: 9999 !important;
+}

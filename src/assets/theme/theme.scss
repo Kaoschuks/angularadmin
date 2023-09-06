@@ -1,104 +1,86 @@
-:root{
-    --color-primary: #5e51ea;
-    --color-secondary: #fcf9fc;
-    --color-tertiary: #4439d5;
-    --color-white: #ffffff;
-    --color-medium: #6c757d;
-    --color-light: #fffeff;
 
-    --color-medium-50: #f8f5fd;
-    --color-light-50: #f0edff;
+
+/* Angular Swiper Style */
+@import "swiper/scss";
+@import "swiper/scss/navigation";
+@import "swiper/css/free-mode";
+
+@import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '@fortawesome/fontawesome-free/scss/solid.scss';
+@import '@fortawesome/fontawesome-free/scss/regular.scss';
+@import '@fortawesome/fontawesome-free/scss/brands.scss';
+@import '~mdb-ui-kit/css/mdb.min.css';
+
+body {
+    &::-webkit-scrollbar {
+        display: block;
+        scrollbar-width: 5px;
+        background: none;
+        width: 7px;
+        border-radius: 10px;
+      }
     
-    // --color-lotion: #fcf9fc;
-    // --color-magnolia: #f8f5fd;
-    // --color-lavender: #f0edff;
+      &::-webkit-scrollbar-thumb {
+          border-radius: 10px;
+          cursor: pointer;
+    }    
 
-    --big-title-text: 2.2rem;
-
-    --font-weight: 600;
 }
 
-//Fonts Sizes----------------------------------------------------------------
-.fs-11 {
-    font-size: 0.75rem !important;
+.no-shadow {
+    box-shadow: none !important;
 }
-.fs-12{
-    font-size: 0.8rem !important;
+
+.fs-10 {
+    font-size: 10px !important;
 }
-.fs-13 {
-    font-size: 0.82rem !important;
+.fs-12 {
+    font-size: 12px !important;
+}
+.fs-14 {
+    font-size: 14px !important;
 }
 .fs-16 {
-    font-size: 1.5rem !important;
+    font-size: 16px !important;
+}
+.fs-18 {
+    font-size: 18px !important;
+}
+.fs-20 {
+    font-size: 20px !important;
+}
+.fs-22 {
+    font-size: 22px !important;
+}
+.fs-25 {
+    font-size: 25px !important;
+}
+.fs-30 {
+    font-size: 30px !important;
 }
 .fs-40 {
-    font-size: var(--big-title-text) !important;
+    font-size: 40px !important;
+}
+.fs-50 {
+    font-size: 50px !important;
+}
+.fs-60 {
+    font-size: 60px !important;
+}
+.fs-70 {
+    font-size: 70px !important;
 }
 
-//Font Weight----------------------------------------------------------------
-.fw-600 {
-    font-weight: var(--font-weight) !important;
+/* Theme Font Weight */
+.fw-4 {
+    font-weight: 400 !important;
 }
-
-//Margins----------------------------------------------------------------
-.-mb-8 {
-    margin-bottom: -8px !important;
+.fw-5 {
+    font-weight: 500 !important;
 }
-.mb-34 {
-    margin-bottom: 34px !important;
+.fw-6 {
+    font-weight: 600 !important;
 }
-
-//Padding----------------------------------------------------------------
-.pb-120 {
-    padding-bottom: 120px;
-}
-
-//Borders----------------------------------------------------------------
-.border-b {
-    border-bottom: 1px solid var(--color-medium) !important;
-}
-
-
-//Aligns----------------------------------------------------------------
-.vertical-align-middle {
-    vertical-align: middle !important;
-}
-
-//Colors----------------------------------------------------------------
-.text-primary {
-    color: var(--color-primary) !important;
-}
-.text-light-50 {
-    color: var(--color-light-50) !important;
-}
-.text-secondary {
-    color: var(--color-secondary) !important;
-}
-.text-medium-50 {
-    color: var(--color-medium-50) !important;
-}
-
-//Backgrounds----------------------------------------------------------------
-.bg-primary {
-    background: var(--color-primary) !important;
-}
-.background-light-50 {
-    background: var(--color-light-50) !important;
-}
-.background-secondary {
-    background: var(--color-secondary) !important;
-}
-
-//Heights----------------------------------------------------------------
-.h-200 {
-    height: 220px !important;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.cursor-pointer {
-    cursor: pointer;
+.fw-7 {
+    font-weight: 700 !important;  
 }
