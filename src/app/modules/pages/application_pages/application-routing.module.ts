@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ApplicationPage } from './application.page';
 import { HomePage } from './home/home.component';
-import { PostsCategoriesComponent } from './posts/posts-categories/posts-categories.component';
-import { PostsComponent } from './posts/posts/posts.component';
 
 const routes: Routes = [
   {
@@ -20,21 +18,21 @@ const routes: Routes = [
         data: { title: 'Home' },
         component: HomePage
       },
-      {
-        path: 'posts',
-        children: [
-          {
-            path: 'categories',
-            data: { title: 'Posts Categories' },
-            component: PostsCategoriesComponent
-          },
-          {
-            path: 'all',
-            data: { title: 'All Posts' },
-            component: PostsComponent
-          },
-        ]
-      },
+      // {
+      //   path: 'posts',
+      //   children: [
+      //     {
+      //       path: 'categories',
+      //       data: { title: 'Posts Categories' },
+      //       component: PostsCategoriesComponent
+      //     },
+      //     {
+      //       path: 'all',
+      //       data: { title: 'All Posts' },
+      //       component: PostsComponent
+      //     },
+      //   ]
+      // },
     ]
   }
 ];

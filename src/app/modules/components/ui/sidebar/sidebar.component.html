@@ -1,6 +1,6 @@
 
 <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse">
-    <div class="position-sticky">
+    <div>
         <div class="list-group list-group-flush mt-4">
             <a routerLink="/home" routerLinkActive="active" class="list-group-item  border-0" aria-current="true">
                 <i class='bx bx-home-alt-2'></i>
@@ -11,48 +11,68 @@
                 <i class='bx bx-category-alt'></i>
                 <span>Analytics</span>
             </a>
+            
+            <br />
+            <p class="fs-14">Expenses Management</p>
+            <a routerLink="/expenses/categories" routerLinkActive="active" class="list-group-item  border-0" aria-current="true">
+                <i class='bx bx-category-alt'></i>
+                <span>Expense Categories</span>
+            </a>
+            <a routerLink="/expenses/sources" routerLinkActive="active" class="list-group-item  border-0" aria-current="true">
+                <i class='bx bx-category-alt'></i>
+                <span>Expense Sources</span>
+            </a>
         
             <br />
-            <p class="fs-14">Post Management</p>
-            <a routerLink="/posts/all" routerLinkActive="active" class="list-group-item  border-0" aria-current="true">
+            <p class="fs-14">Requests Management</p>
+            <a routerLink="/requests/listings" routerLinkActive="active" class="list-group-item  border-0" aria-current="true">
                 <i class='bx bx-category-alt'></i>
-                <span>All Posts</span>
+                <span>All Requests</span>
             </a>
-            <a routerLink="/posts/categories" routerLinkActive="active" class="list-group-item  border-0" aria-current="true">
+            <a routerLink="/requests/categories" routerLinkActive="active" class="list-group-item  border-0" aria-current="true">
                 <i class='bx bx-category-alt'></i>
-                <span>Categories</span>
+                <span>Request Categories</span>
             </a>
-            <a routerLink="/posts/reviews" routerLinkActive="active" class="list-group-item  border-0" aria-current="true">
+            <a routerLink="/requests/features" routerLinkActive="active" class="list-group-item  border-0" aria-current="true">
                 <i class='bx bx-category-alt'></i>
-                <span>Reviews</span>
+                <span>Request Features</span>
             </a>
-            
-            <!-- <div class="accordion accordion-flush" id="navigationAccordoin">
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <a class="accordion-button list-group-item border-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            <i class='bx bx-category-alt'></i>
-                            <span>Posts Management</span>
-                        </a>
-                    </div>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse border-0" data-bs-parent="#navigationAccordoin">
-                        <div class="accordion-body list-group list-group-flush border-0">
-                            <a routerLink="/posts/all" routerLinkActive="active" class="list-group-item  border-0" aria-current="true">
-                                <span>All Posts</span>
-                            </a>
-                            <a routerLink="/posts/categories" routerLinkActive="active" class="list-group-item  border-0" aria-current="true">
-                                <span>Categories</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+
+            <br />
+            <p class="fs-14">Businesses Management</p>
+            <a routerLink="/business/listings" routerLinkActive="active" class="list-group-item  border-0" aria-current="true">
+                <i class='bx bx-cog' ></i>
+                <span>Business Listings</span>
+            </a>
+            <a routerLink="/business/agents" routerLinkActive="active" class="list-group-item  border-0" aria-current="true">
+                <i class='bx bx-cog' ></i>
+                <span>Business Agents</span>
+            </a>
+            <a routerLink="/business/users" routerLinkActive="active" class="list-group-item  border-0" aria-current="true">
+                <i class='bx bx-cog' ></i>
+                <span>Business Users</span>
+            </a>
+        
+            <br />
+            <p class="fs-14">Transactions Management</p>
+            <a routerLink="/payents/transactions" routerLinkActive="active" class="list-group-item  border-0" aria-current="true">
+                <i class='bx bx-category-alt'></i>
+                <span>All Transactions</span>
+            </a>
+            <a routerLink="/payents/transactions" routerLinkActive="active" class="list-group-item  border-0" aria-current="true">
+                <i class='bx bx-category-alt'></i>
+                <span>Subscriptions</span>
+            </a>
             
             <br />
             <p class="fs-14">Account Management</p>
-            <a routerLink="/settings" routerLinkActive="active" class="list-group-item  border-0" aria-current="true">
+            <a routerLink="/accounts/users" routerLinkActive="active" class="list-group-item  border-0" aria-current="true">
                 <i class='bx bx-cog' ></i>
-                <span>Staffs</span>
+                <span>Users Accounts</span>
+            </a>
+            <a routerLink="/accounts/staffs" routerLinkActive="active" class="list-group-item  border-0" aria-current="true">
+                <i class='bx bx-cog' ></i>
+                <span>Staffs Members</span>
             </a>
 
             <br />
@@ -61,13 +81,12 @@
                 <!-- <i class='bx bxs-cog' ></i> -->
                 <span>Settings</span>
             </a>
-            <a routerLink="/help" routerLinkActive="active" class="list-group-item  border-0" aria-current="true">
+            <a routerLink="/faqs" routerLinkActive="active" class="list-group-item  border-0" aria-current="true">
                 <!-- <i class='bx bxs-help-circle' ></i> -->
-                <span>Help</span>
+                <span>Frequently Asked Questions</span>
             </a>
-            <a routerLink="/feedback" routerLinkActive="active" class="list-group-item  border-0" aria-current="true">
-                <!-- <i class='bx bx-mail-send' ></i> -->
-                <span>Send Feedback</span>
+            <a class="list-group-item  border-0" aria-current="true">
+                <span>Newsletter</span>
             </a>
         </div>
     </div>

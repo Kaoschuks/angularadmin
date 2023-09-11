@@ -5,13 +5,10 @@ import { ApplicationsRoutingModule } from './application-routing.module';
 import { ApplicationPage } from './application.page';
 import { ComponentsModule } from '../../components';
 import { HomePage } from './home/home.component';
-import { PostsCategoriesComponent } from './posts/posts-categories/posts-categories.component';
-import { PostsComponent } from './posts/posts/posts.component';
 
 export const pages: any = [
   ApplicationPage,
   HomePage,
-  PostsCategoriesComponent, PostsComponent
 ]
 
 @NgModule({

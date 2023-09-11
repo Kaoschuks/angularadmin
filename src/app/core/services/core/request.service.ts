@@ -6,7 +6,7 @@ import { environment } from "src/environments/environment.prod";
 export class RequestService {
   jwt: string | undefined;
   url: string = environment.url;
-  private http = inject(HttpClient)
+  private http: HttpClient = inject(HttpClient)
 
   constructor() {}
 

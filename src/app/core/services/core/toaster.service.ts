@@ -5,7 +5,7 @@ import { HotToastService } from '@ngneat/hot-toast';
   providedIn: 'root',
 })
 export class ToasterService {
-  private toast = inject(HotToastService);
+  private toast: HotToastService = inject(HotToastService);
   
   constructor() {}
 

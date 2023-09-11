@@ -16,8 +16,8 @@ export class GlobalsService
   title:string = 'overview';
   spinner = inject(NgxSpinnerService);
   router = inject(Router);
-  private location = inject(Location);
-  storage = inject(StorageServices);
+  private location: Location = inject(Location);
+  storage: StorageServices = inject(StorageServices);
 
   constructor(
   ) {

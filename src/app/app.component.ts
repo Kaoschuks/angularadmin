@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { GlobalsService } from './core';
 
 @Component({
@@ -8,8 +8,9 @@ import { GlobalsService } from './core';
 })
 export class AppComponent implements OnInit {
   title = 'admin';
+  globals: GlobalsService = inject(GlobalsService);
 
-  constructor(public globals: GlobalsService) {}
+  constructor() {}
 
   ngOnInit() {
     

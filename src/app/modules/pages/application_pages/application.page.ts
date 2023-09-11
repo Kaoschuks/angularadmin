@@ -1,4 +1,5 @@
-import { Component } from "@angular/core";
+import { Component, inject } from "@angular/core";
+import { GlobalsService } from "src/app/core";
 import { environment } from "src/environments/environment";
 
 @Component({
@@ -7,7 +8,7 @@ import { environment } from "src/environments/environment";
   styleUrls: ["./application.page.scss"],
 })
 export class ApplicationPage {
-
+  globals: GlobalsService = inject(GlobalsService);
   constructor(
   ) {}
 }

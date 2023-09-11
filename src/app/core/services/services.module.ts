@@ -13,6 +13,7 @@ export function initializeApp(globals: GlobalsService) {
   return (): void => { 
     try {
       globals.storage.persistStorage(Date.now());
+      globals.setUrlTitle()
       setTimeout(() => {
         globals.showsplash = false
       }, 1000)
