@@ -14,6 +14,14 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./home/home.component').then((m) => m.HomeComponent),
       },
+      {
+        path: 'dashboard',
+        data: {
+          title: 'dashboard'
+        },
+        loadComponent: () =>
+          import('./home/home.component').then((m) => m.HomeComponent),
+      },
     ],
   },
   {

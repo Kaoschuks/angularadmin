@@ -80,6 +80,14 @@ body {
 .bg-gray {
     background-color: var(--bs-gray-200) !important;
 }
+
+.bg-gray-light {
+    background-color: var(--bs-gray-100) !important;
+}
+
+.bg-gray-dark {
+    background-color: var(--bs-gray-400) !important;
+}
 * {
     font-family: "Moderat", Roboto, Arial, sans-serif !important;
     // -webkit-font-smoothing: antialiased !important;

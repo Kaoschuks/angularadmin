@@ -26,6 +26,18 @@ export class GlobalsService
       if (event instanceof ActivationStart) this.title = event.snapshot.data['title']
     });
   }
+
+  async initializeApp() {
+    try {
+      this.setUrlTitle();
+      this.showsplash = true
+      setTimeout(() => {
+        this.showsplash = false
+      }, 5000);
+    } catch (error) {
+      console.log(error)
+    }
+  }
 }
 
 

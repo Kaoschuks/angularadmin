@@ -2,8 +2,14 @@
     width: 260px !important;
 }
 form {
-    width: 50vw !important;
-    border: 1px solid #eee !important;
+    width: 40vw !important;
+    position: absolute !important;
+    left: 310px !important;
+    /* border: 1px solid #eee !important; */
+}
+input {
+    height: 45px !important;
+    
 }
 .navbar {
     /* padding-left: 20px !important; */
@@ -14,4 +20,7 @@ form {
     i {
         margin-top: 5px !important;
     }
+}
+nav {
+    width: 100vw !important;
 }

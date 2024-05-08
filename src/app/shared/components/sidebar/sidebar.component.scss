@@ -1,17 +1,4 @@
 :host {
-
-    .list-group-item {
-        span {
-            font-size: 15px !important;
-            margin-left: 15px !important;
-        }
-        i {
-            font-size: 20px !important;
-            top: 2px !important;
-            position: relative;
-            // margin-left: 10px !important;
-        }
-    }
     
     .accordion-body {
         padding-left: 10px !important;
@@ -26,6 +13,25 @@
         padding: 50px 0 0;
         width: 260px;
         z-index: 600;
+        overflow: scroll !important;
+
+        .list-group-item {
+            background-color: transparent !important;
+            &.active {
+                border-radius: 5px;
+            }
+            span {
+                font-size: 15px !important;
+                margin-left: 15px !important;
+            }
+            i {
+                font-size: 20px !important;
+                top: 2px !important;
+                position: relative;
+                // margin-left: 10px !important;
+            }
+        }
+
         a {
             i {
                 padding-left: 10px !important;
@@ -40,9 +46,6 @@
             padding-top: 30px !important;
             padding-bottom: 7px !important;
             color: #000 !important;
-        }
-        .active {
-            border-radius: 5px;
         }
         .badge {
             float: right !important;
