@@ -1,0 +1,17 @@
+.navbar-brand {
+    width: 260px !important;
+}
+form {
+    width: 50vw !important;
+    border: 1px solid #eee !important;
+}
+.navbar {
+    /* padding-left: 20px !important; */
+    padding: 3px 20px !important;
+    /* padding-right: 20px !important; */
+}
+.nav-link {
+    i {
+        margin-top: 5px !important;
+    }
+}
