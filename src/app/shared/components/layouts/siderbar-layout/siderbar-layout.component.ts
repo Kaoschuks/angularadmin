@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { NgIf, TitleCasePipe } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent, FooterComponent, SidebarComponent, BreadcrumbComponent } from '../../../components';
-import { GlobalsService } from '../../../../core/services';
+import { GlobalsService } from '../../../../core';
 
 @Component({
   selector: 'app-siderbar-layout',

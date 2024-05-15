@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { AuthLayoutComponent } from '../../shared';
+import { LoginComponent } from './login/login.component';
 
 export const authroutes: Routes = [
   {
@@ -7,7 +8,9 @@ export const authroutes: Routes = [
     component: AuthLayoutComponent,
     children: [
       {
-        path: '',
+        path: 'login',
+        loadComponent: () =>
+          import('./login/login.component').then((m) => m.LoginComponent),
       },
       {
         path: '',
