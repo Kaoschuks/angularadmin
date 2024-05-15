@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { SiderbarLayoutComponent } from '../../shared';
 
-export const routes: Routes = [
+export const approutes: Routes = [
   {
     path: '',
     component: SiderbarLayoutComponent,
@@ -9,10 +9,10 @@ export const routes: Routes = [
       {
         path: '',
         data: {
-          title: 'Home'
+          title: 'dashboard'
         },
         loadComponent: () =>
-          import('./home/home.component').then((m) => m.HomeComponent),
+          import('./dashboard/dashboard.component').then((m) => m.DashboardComponent),
       },
       {
         path: 'dashboard',
@@ -20,13 +20,29 @@ export const routes: Routes = [
           title: 'dashboard'
         },
         loadComponent: () =>
-          import('./home/home.component').then((m) => m.HomeComponent),
+          import('./dashboard/dashboard.component').then((m) => m.DashboardComponent),
+      },
+      {
+        path: 'settings',
+        data: {
+          title: 'settings'
+        },
+        loadComponent: () =>
+          import('./settings/settings.component').then((m) => m.SettingsComponent),
+      },
+      {
+        path: 'users',
+        data: {
+          title: 'Users Accounts'
+        },
+        loadComponent: () =>
+          import('./users/users.component').then((m) => m.UsersComponent),
       },
     ],
   },
   {
     path: '',
-    redirectTo: '/home',
+    redirectTo: '/dashboard',
     pathMatch: 'full',
   },
 ];

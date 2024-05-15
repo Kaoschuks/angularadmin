@@ -1,0 +1,15 @@
+
+<div class="d-lg-flex align-items-end mb-4 mt-2" *ngIf="!['dashboard', 'settings'].includes(title)">
+    <h3 class="page-header mb-lg-0 fs-22">
+      {{ title | titlecase }}
+      <small class="d-block fs-14 mt-1">Monitor key performance metrics for online store</small>
+    </h3>
+    <div class="ms-auto">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item fs-14"><a href="#">Aide Finance</a></li>
+          <li class="breadcrumb-item fs-14 active" aria-current="page"> {{ title | titlecase }}</li>
+        </ol>
+      </nav>
+    </div>
+  </div>

@@ -1,15 +1,16 @@
 import { Component, inject } from '@angular/core';
-import { HeaderComponent } from '../../header/header.component';
-import { FooterComponent } from '../../footer/footer.component';
-import { GlobalsService } from '../../../services';
 import { NgIf, TitleCasePipe } from '@angular/common';
-import { SidebarComponent } from '../../sidebar/sidebar.component';
 import { RouterOutlet } from '@angular/router';
+import { HeaderComponent, FooterComponent, SidebarComponent, BreadcrumbComponent } from '../../../components';
+import { GlobalsService } from '../../../../core/services';
 
 @Component({
   selector: 'app-siderbar-layout',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, RouterOutlet, SidebarComponent, TitleCasePipe, NgIf],
+  imports: [
+    HeaderComponent, FooterComponent, BreadcrumbComponent,
+    RouterOutlet, SidebarComponent, TitleCasePipe, NgIf
+  ],
   templateUrl: './siderbar-layout.component.html',
   styleUrl: './siderbar-layout.component.scss'
 })
