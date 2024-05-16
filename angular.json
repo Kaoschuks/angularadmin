@@ -31,10 +31,16 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/@ngneat/hot-toast/src/styles/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/css/dataTables.bootstrap5.min.css",
               "src/styles.scss"
             ],
             "scripts": [
+              "src/assets/js/jquery-3.7.0.js",
+              "src/assets/js/jquery.dataTables.min.js",
+              "src/assets/js/dataTables.bootstrap5.min.js",
+              "node_modules/apexcharts/dist/apexcharts.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
           },

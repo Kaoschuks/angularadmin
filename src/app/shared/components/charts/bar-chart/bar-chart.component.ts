@@ -21,12 +21,12 @@ export class BarChartComponent implements OnChanges {
   @Input() xaxisLabelColor: string = '#78909c';
   @Input() chartSeries: Array<any> = [{
     name: 'Credit',
-    data: [10, 12, 21, 30, 49, 10, 12, 9, 15, 100, 0, 12]
+    data: [10, 12, 21, 30, 49, 10, 12, 9, 15, 100, 0, 12, -50, -49, -60, -70, -91]
   },{
     name: 'Debit',
-    data: [-30, -40, -45, -50, -49, -60, -70, -91, -120, -25, -25, -80]
+    data: [-30, -40, -45, -50, -49, -60, -70, -91, -120, -25, -25, -80, 21, 30, 49, 10, 12]
   }];
-  @Input() chartLabels: Array<string> = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  @Input() chartLabels: Array<string> = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May'];
   @Input() showXaxisLabels: boolean = false; // Toggle xaxis label - Default is TRUE
   @Input() showYaxisLabels: boolean = true; // Toggle yaxis label - Default is FALSE
   @Input() distributed: boolean = false; // A distributed column chart means all the columns in the chart will have different colors.

@@ -1,0 +1,24 @@
+<div
+  class="modal fade modal-xl"
+  [id]="id + '_modal'"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div
+    class="modal-dialog modal-fullscreen modal-right modal-dialog-scrollable"
+    [ngClass]="width"
+  >
+    <div class="modal-content">
+      <div select="modal-header" class="modal-header">
+        <ng-content select="[modal-header]"></ng-content>
+      </div>
+      <div class="modal-body">
+        <ng-content></ng-content>
+      </div>
+      <div class="modal-footer">
+        <ng-content select="[modal-footer]"></ng-content>
+      </div>
+    </div>
+  </div>
+</div>

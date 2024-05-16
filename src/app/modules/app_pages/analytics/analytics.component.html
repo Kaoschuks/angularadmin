@@ -1,0 +1,213 @@
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card w-100 mb-3">
+            <div class="card-body">
+                <div class="mb-4">
+                    <div class="d-flex align-items-center justify-content-between w-75 pb-3">
+                        <div>
+                            <h2 class="fw-bold fs-18 card-title">Change Analysis</h2>
+                            <p class="fs-14 text-muted" style="margin-top: -5px">Countries / regions with the largest change
+                                between the first interval in your selected period and the last interval with complete data</p>
+                        </div>
+                    </div>
+                    <bar-chart [columnWidth]="'20%'" [height]="200"></bar-chart>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card w-100 mb-3">
+            <div class="card-body">
+                <div class="mb-4">
+                    <div class="d-flex align-items-center justify-content-between w-75 pb-3">
+                        <div>
+                            <h2 class="fw-bold fs-18 card-title">Conversion Rate</h2>
+                            <p class="fs-14 text-muted" style="margin-top: -5px">Countries / regions with the largest change
+                                between the first interval in your selected period and the last interval with complete data</p>
+                        </div>
+                    </div>
+                    <line-chart [height]="200" [chartType]="'area'"></line-chart>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="card w-100 mb-3">
+            <div class="card-body">
+                <div class="d-flex align-items-center justify-content-between w-75 pb-3">
+                    <div>
+                        <h2 class="fw-bold fs-18 card-title">Server Activity</h2>
+                        <p class="fs-14 text-muted" style="margin-top: -5px">Countries / regions with the largest change between
+                            the first interval in your selected period and the last interval with complete data</p>
+                    </div>
+                </div>
+                <div class="mb-4 no-padding">
+                    <table class="table align-middle mb-0 bg-white table-hover">
+                        <thead class="bg-light">
+                            <tr>
+                                <td style="width: 10px;">No.</td>
+                                <th>Information</th>
+                                <th>Country</th>
+                                <th>Category type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td role="button">
+                                    <div class="d-flex align-items-center"><img
+                                            alt="Image of expenses" class="me-3"
+                                            style="width: 20px; height: 20px;"
+                                            src="http://res.cloudinary.com/kaoschuks/image/upload/v1708020804/aide/refinance_e6rzgy.png">
+                                        <div class="group">
+                                            <p class="m-0"> Refinance </p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td role="button"> United Arab Emirates </td>
+                                <td role="button"> Loans Requests </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td role="button">
+                                    <div class="d-flex align-items-center"><img
+                                            alt="Image of expenses" class="me-3"
+                                            style="width: 20px; height: 20px;"
+                                            src="http://res.cloudinary.com/kaoschuks/image/upload/v1708020578/aide/life_toaunk.png">
+                                        <div class="group">
+                                            <p class="m-0"> Life </p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td role="button"> United Arab Emirates </td>
+                                <td role="button"> Insurance Requests </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td role="button">
+                                    <div class="d-flex align-items-center"><img
+                                            alt="Image of expenses" class="me-3"
+                                            style="width: 20px; height: 20px;"
+                                            src="http://res.cloudinary.com/kaoschuks/image/upload/v1708021553/aide/healthcare_umwynk.png">
+                                        <div class="group">
+                                            <p class="m-0"> Health </p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td role="button"> United Arab Emirates </td>
+                                <td role="button"> Insurance Requests </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td role="button">
+                                    <div class="d-flex align-items-center"><img
+                                            alt="Image of expenses" class="me-3"
+                                            style="width: 20px; height: 20px;"
+                                            src="http://res.cloudinary.com/kaoschuks/image/upload/v1708020707/aide/islamic_ccv3ut.png">
+                                        <div class="group">
+                                            <p class="m-0"> Islamic </p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td role="button"> United Arab Emirates </td>
+                                <td role="button"> Loans Requests </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td role="button">
+                                    <div class="d-flex align-items-center"><img
+                                            alt="Image of expenses" class="me-3"
+                                            style="width: 20px; height: 20px;"
+                                            src="http://res.cloudinary.com/kaoschuks/image/upload/v1708021462/aide/auto_y8q6tj.png">
+                                        <div class="group">
+                                            <p class="m-0"> Auto </p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td role="button"> United Arab Emirates </td>
+                                <td role="button"> Loans Requests </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td role="button">
+                                    <div class="d-flex align-items-center"><img
+                                            alt="Image of expenses" class="me-3"
+                                            style="width: 20px; height: 20px;"
+                                            src="http://res.cloudinary.com/kaoschuks/image/upload/v1705842885/aide/automobile_ur0ozg.svg">
+                                        <div class="group">
+                                            <p class="m-0"> Car </p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td role="button"> United Arab Emirates </td>
+                                <td role="button"> Rentals Requests </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td role="button">
+                                    <div class="d-flex align-items-center"><img
+                                            alt="Image of expenses" class="me-3"
+                                            style="width: 20px; height: 20px;"
+                                            src="http://res.cloudinary.com/kaoschuks/image/upload/v1705842886/aide/mortage_qhk44c.svg">
+                                        <div class="group">
+                                            <p class="m-0"> Home </p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td role="button"> United Arab Emirates </td>
+                                <td role="button"> Loans Requests </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td role="button">
+                                    <div class="d-flex align-items-center"><img
+                                            alt="Image of expenses" class="me-3"
+                                            style="width: 20px; height: 20px;"
+                                            src="http://res.cloudinary.com/kaoschuks/image/upload/v1708020987/aide/car-insurance_h0adkf.png">
+                                        <div class="group">
+                                            <p class="m-0"> Car </p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td role="button"> United Arab Emirates </td>
+                                <td role="button"> Insurance Requests </td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td role="button">
+                                    <div class="d-flex align-items-center"><img
+                                            alt="Image of expenses" class="me-3"
+                                            style="width: 20px; height: 20px;"
+                                            src="http://res.cloudinary.com/kaoschuks/image/upload/v1705842884/aide/personal_p7nllo.svg">
+                                        <div class="group">
+                                            <p class="m-0"> Personal </p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td role="button"> United Arab Emirates </td>
+                                <td role="button"> Loans Requests </td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td role="button">
+                                    <div class="d-flex align-items-center"><img
+                                            alt="Image of expenses" class="me-3"
+                                            style="width: 20px; height: 20px;"
+                                            src="http://res.cloudinary.com/kaoschuks/image/upload/v1705842883/aide/cards_mlzcdv.svg">
+                                        <div class="group">
+                                            <p class="m-0"> Credit </p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td role="button"> United Arab Emirates </td>
+                                <td role="button"> Cards Requests </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

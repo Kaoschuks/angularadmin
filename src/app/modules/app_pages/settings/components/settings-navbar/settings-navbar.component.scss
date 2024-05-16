@@ -1,7 +1,10 @@
 :host {
     .nav-link {
         padding: 15px !important;
-        font-size: 14px !important
-        ;
+        font-size: 13px !important
+    }
+    .nav-tabs {
+        padding-left: 20px !important;
+        border-radius: 5px !important;
     }
 }

@@ -23,9 +23,17 @@ export const approutes: Routes = [
           import('./dashboard/dashboard.component').then((m) => m.DashboardComponent),
       },
       {
+        path: 'analytics',
+        data: {
+          title: 'Analytics'
+        },
+        loadComponent: () =>
+          import('./analytics/analytics.component').then((m) => m.AnalyticsComponent),
+      },
+      {
         path: 'settings',
         data: {
-          title: 'settings'
+          title: 'App settings'
         },
         loadComponent: () =>
           import('./settings/settings.component').then((m) => m.SettingsComponent),

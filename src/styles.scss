@@ -23,6 +23,9 @@ body::-webkit-scrollbar-track {
 	background-color: #f1f1f1 !important;  /* Color of the track */
 }
 main {
-    margin-top: 70px !important;
+    margin-top: 80px !important;
     margin-bottom: 70px !important;
+}
+.dataTables_length, .dataTables_info, .dataTables_filter, .dataTables_paginate {
+	margin: 0px 20px !important;
 }

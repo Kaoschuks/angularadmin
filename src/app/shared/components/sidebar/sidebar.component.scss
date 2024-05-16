@@ -19,6 +19,7 @@
             background: transparent !important;
             &.active {
                 border-radius: 5px;
+                background-color: var(--mdb-list-group-active-bg) !important;
             }
             span {
                 font-size: 15px !important;

@@ -1,4 +1,5 @@
 export * from './charts';
+export * from './modals';
 export * from './error/error.component';
 export * from './breadcrumb/breadcrumb.component';
 export * from './footer/footer.component';
