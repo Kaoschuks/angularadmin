@@ -1,12 +1,12 @@
-.modal {
-  .modal-right {
+.offcanvas {
+  &.modal-right {
     width: 500px !important;
     margin-left: auto;
   }
-  .right-md {
+  &.right-md {
     width: 50vw !important;
   }
-  .right-lg {
+  &s.right-lg {
     width: 70vw !important;
   }
 }

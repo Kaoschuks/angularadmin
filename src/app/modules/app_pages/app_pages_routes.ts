@@ -46,6 +46,14 @@ export const approutes: Routes = [
         loadComponent: () =>
           import('./users/users.component').then((m) => m.UsersComponent),
       },
+      {
+        path: 'staffs',
+        data: {
+          title: 'Staffs Accounts'
+        },
+        loadComponent: () =>
+          import('./users/users.component').then((m) => m.UsersComponent),
+      },
     ],
   },
   {
