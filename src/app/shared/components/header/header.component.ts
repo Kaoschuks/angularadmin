@@ -1,3 +1,4 @@
+import { NgClass } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -6,8 +7,15 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core
   styleUrls: ['./header.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports:[]
+  imports:[
+    NgClass
+  ]
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   @Input() title!: string
+  @Input() color!: string
+
+  ngOnInit(): void {
+    console.log(this.color)
+  }
 }

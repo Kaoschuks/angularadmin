@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NoContentComponent } from '../../../shared';
+import { ModalBottomComponent, NoContentComponent } from '../../../shared';
 import { FilterModalComponent } from '../../modals/filter-modal/filter-modal.component';
 import { AlertModalComponent } from '../../modals/alert-modal/alert-modal.component';
 import { UsersTableComponent } from './components';
@@ -9,6 +9,7 @@ import { UsersAccessnavComponent } from './components/users-accessnav/users-acce
   selector: 'app-users',
   standalone: true,
   imports: [
+    ModalBottomComponent,
     UsersTableComponent, UsersAccessnavComponent,
     NoContentComponent, FilterModalComponent, AlertModalComponent
   ],

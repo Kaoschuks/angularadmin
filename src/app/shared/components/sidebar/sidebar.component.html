@@ -1,5 +1,13 @@
 
-<nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse ">
+<nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse" [ngClass]="bgColor">
+    <!-- <nav class="navbar navbar-expand-lg navbar-white fixed-top no-shadow b-b">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <span class="text-primary">Web </span>
+                Dashboard
+            </a>
+        </div>
+    </nav> -->
     <div>
         <div class="list-group list-group-flush mt-4">
             <a routerLink="/dashboard" routerLinkActive="active" class="list-group-item border-0" aria-current="true">
@@ -35,6 +43,7 @@
                         <a class="accordion-button list-group-item border-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                             <i class='bx bx-category-alt'></i>
                             <span>Transactions</span>
+                            <i class='bx bx-chevron-down fs-20 pull-right'></i>
                         </a>
                     </div>
                     <div id="flush-collapseOne" class="accordion-collapse collapse border-0" data-bs-parent="#navigationAccordoin">
@@ -63,11 +72,11 @@
             
             <h2 class="title">Account Management</h2>
             <a routerLink="/users" routerLinkActive="active" class="list-group-item  border-0" aria-current="true">
-                <i class='bx bx-cog' ></i>
+                <i class='bx bxs-user-account' ></i>
                 <span>Users Accounts</span>
             </a>
             <a routerLink="/staffs" routerLinkActive="active" class="list-group-item  border-0" aria-current="true">
-                <i class='bx bx-cog' ></i>
+                <i class='bx bxs-user-account' ></i>
                 <span>Staffs Members</span>
             </a>
 

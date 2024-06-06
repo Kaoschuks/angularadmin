@@ -1,0 +1,12 @@
+
+<div class="offcanvas offcanvas-bottom" [ngClass]="height" data-bs-scroll="true" tabindex="-1" [id]="id + '_offcanvas'">
+    <div select="modal-header" class="offcanvas-header">
+      <ng-content select="[modal-header]"></ng-content>
+    </div>
+    <div class="offcanvas-body">
+      <ng-content></ng-content>
+    </div>
+    <div class="offcanvas-footer">
+      <ng-content select="[modal-footer]"></ng-content>
+    </div>
+  </div>

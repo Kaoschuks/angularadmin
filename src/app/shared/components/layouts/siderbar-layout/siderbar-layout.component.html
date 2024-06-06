@@ -1,10 +1,10 @@
 
-  <app-header>
-    <sidebar></sidebar>
+  <app-header [color]="globals.pageColor">
+    <sidebar [bgColor]="globals.pageColor"></sidebar>
   </app-header>
 
 
-  <div class="container-fluid mt-10">
+  <div class="container-fluid">
     <div class="col-lg-12">
       <breadcrumb [title]="globals.title"></breadcrumb>
       <router-outlet />

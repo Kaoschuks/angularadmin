@@ -42,7 +42,7 @@ export class LineChartComponent implements OnInit {
   @Input() chartLabels: Array<string> = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   @Input() chartSeries: Array<any> = [{
     name: 'Debit',
-    data: [30, 40, 35, 50, 49, 60, 70, 91, 25, 100, 0, 12]
+    data: [70, 91, 25, 100, 49, 60, 70, 91, 25, 100, 0, 12]
   }
   ];
 

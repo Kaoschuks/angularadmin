@@ -1,15 +1,13 @@
-<modal-small [id]="'delete'">
+<modal-small [id]="id">
     <ng-container header>
-        <h5 class="modal-title" id="exampleModalToggleLabel">Delete Account</h5>
+        <h5 class="modal-title" id="exampleModalToggleLabel">{{title | titlecase}}</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     </ng-container>
-    <p body>Are you sure you want to delete this account?</p>
+    <p [innerHTML]="message"></p>
     <ng-container footer>
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
             Close
         </button>
-        <button type="button" class="btn btn-danger">
-            Delete
-        </button>
+        <button type="button" class="btn btn-danger">{{ actionBtnTxt | titlecase }}</button>
     </ng-container>
 </modal-small>

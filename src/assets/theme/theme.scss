@@ -2,6 +2,16 @@
 
 /* Angular Swiper Style */
 @import 'mdb-ui-kit/css/mdb.min.css';
+* {
+    // font-family: 'Radio Canada Big', Moderat, Arial, sans-serif !important;
+    font-family: "Moderat", Roboto, Arial, sans-serif !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    font-weight: 400 !important;
+    font-display: swap !important;
+    // line-height: 20px !important;
+    font-style: normal !important;
+}
 
 body {
     &::-webkit-scrollbar {
@@ -88,19 +98,10 @@ body {
 .bg-gray-dark {
     background-color: var(--bs-gray-400) !important;
 }
-* {
-    font-family: "Moderat", Roboto, Arial, sans-serif !important;
-    // -webkit-font-smoothing: antialiased !important;
-    // -moz-osx-font-smoothing: grayscale !important;
-    font-weight: 400 !important;
-    font-display: swap !important;
-    // line-height: 20px !important;
-    font-style: normal !important;
-}
 
 @media (min-width: 991.98px) {
     main {
-        padding-left: 270px;
+        padding-left: 290px !important;
     }
 }
 .no-padding {

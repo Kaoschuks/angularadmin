@@ -1,6 +1,22 @@
 
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-12">
+        <div class="card w-100 mb-3">
+            <div class="card-body">
+                <div class="mb-4">
+                    <div class="d-flex align-items-center justify-content-between w-75">
+                        <div>
+                            <h2 class="fw-bold fs-18 card-title">Conversion Rate</h2>
+                            <p class="fs-14 text-muted" style="margin-top: -5px">Countries / regions with the largest change
+                                between the first interval in your selected period and the last interval with complete data</p>
+                        </div>
+                    </div>
+                    <line-chart [height]="300" [chartType]="'line'"></line-chart>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
         <div class="card w-100 mb-3">
             <div class="card-body">
                 <div class="mb-4">
@@ -12,22 +28,6 @@
                         </div>
                     </div>
                     <bar-chart [columnWidth]="'20%'" [height]="200"></bar-chart>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-6">
-        <div class="card w-100 mb-3">
-            <div class="card-body">
-                <div class="mb-4">
-                    <div class="d-flex align-items-center justify-content-between w-75 pb-3">
-                        <div>
-                            <h2 class="fw-bold fs-18 card-title">Conversion Rate</h2>
-                            <p class="fs-14 text-muted" style="margin-top: -5px">Countries / regions with the largest change
-                                between the first interval in your selected period and the last interval with complete data</p>
-                        </div>
-                    </div>
-                    <line-chart [height]="200" [chartType]="'area'"></line-chart>
                 </div>
             </div>
         </div>

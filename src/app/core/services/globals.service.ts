@@ -16,6 +16,7 @@ export class GlobalsService
   showsplash: boolean = false;
   loading: boolean = false;
   title:string = 'overview';
+  pageColor:string = 'bg-white';
 
   navigate(path: string, subpage: boolean = true) {
     this.router.navigate([path], { replaceUrl: subpage });
