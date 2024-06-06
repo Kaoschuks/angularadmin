@@ -12,12 +12,17 @@ export class UsersTableComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     Object.assign(DataTable.defaults, {
+      layout: {
+          topStart: {
+              buttons: ['copy', 'pdf', 'colvis']
+          }
+      },
       searching: true,
       colReorder: true,
       paginate: true,
       ordering: true,
       autoWidth: !1,
-      responsive: !0,
+      responsive: true,
       lengthMenu: [[10, 15, 30, 45, -1], ["10 Rows", "15 Rows", "30 Rows", "45 Rows", "Everything"]],
       language: {
           searchPlaceholder: "Search for records..."
